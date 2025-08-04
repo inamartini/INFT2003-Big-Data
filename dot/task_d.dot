@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="satisfaction <= 0.494\ngini = 0.5\nsamples = 11254\nvalue = [5627.0, 5627.0]\nclass = Employed"] ;
+1 [label="tenure <= 5.5\ngini = 0.323\nsamples = 3412\nvalue = [3937.447, 997.882]\nclass = Left"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="tenure <= 2.5\ngini = 0.288\nsamples = 3154\nvalue = [3927.069, 831.239]\nclass = Left"] ;
+1 -> 2 ;
+3 [label="gini = 0.263\nsamples = 307\nvalue = [35.286, 191.014]\nclass = Employed"] ;
+2 -> 3 ;
+4 [label="avg_monthly_hrs <= 125.5\ngini = 0.243\nsamples = 2847\nvalue = [3891.783, 640.225]\nclass = Left"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 116\nvalue = [0.0, 76.405]\nclass = Employed"] ;
+4 -> 5 ;
+6 [label="gini = 0.221\nsamples = 2731\nvalue = [3891.783, 563.82]\nclass = Left"] ;
+4 -> 6 ;
+7 [label="gini = 0.11\nsamples = 258\nvalue = [10.378, 166.643]\nclass = Employed"] ;
+1 -> 7 ;
+8 [label="tenure <= 4.5\ngini = 0.392\nsamples = 7842\nvalue = [1689.553, 4629.118]\nclass = Employed"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="gini = 0.132\nsamples = 6397\nvalue = [313.418, 4114.04]\nclass = Employed"] ;
+8 -> 9 ;
+10 [label="avg_monthly_hrs <= 215.5\ngini = 0.396\nsamples = 1445\nvalue = [1376.135, 515.078]\nclass = Left"] ;
+8 -> 10 ;
+11 [label="gini = 0.211\nsamples = 507\nvalue = [43.588, 320.113]\nclass = Employed"] ;
+10 -> 11 ;
+12 [label="tenure <= 6.5\ngini = 0.223\nsamples = 938\nvalue = [1332.547, 194.966]\nclass = Left"] ;
+10 -> 12 ;
+13 [label="gini = 0.139\nsamples = 807\nvalue = [1332.547, 108.68]\nclass = Left"] ;
+12 -> 13 ;
+14 [label="gini = -0.0\nsamples = 131\nvalue = [0.0, 86.285]\nclass = Employed"] ;
+12 -> 14 ;
+}

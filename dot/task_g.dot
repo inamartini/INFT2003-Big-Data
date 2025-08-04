@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="satisfaction <= 0.493\nsquared_error = 0.183\nsamples = 11254\nvalue = 0.759"] ;
+1 [label="n_projects <= 2.5\nsquared_error = 0.247\nsamples = 3401\nvalue = 0.443"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="avg_monthly_hrs <= 161.5\nsquared_error = 0.128\nsamples = 1319\nvalue = 0.15"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.065\nsamples = 1195\nvalue = 0.069"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.067\nsamples = 124\nvalue = 0.927"] ;
+2 -> 4 ;
+5 [label="satisfaction <= 0.178\nsquared_error = 0.233\nsamples = 2082\nvalue = 0.629"] ;
+1 -> 5 ;
+6 [label="squared_error = 0.185\nsamples = 901\nvalue = 0.245"] ;
+5 -> 6 ;
+7 [label="squared_error = 0.073\nsamples = 1181\nvalue = 0.921"] ;
+5 -> 7 ;
+8 [label="tenure <= 4.5\nsquared_error = 0.093\nsamples = 7853\nvalue = 0.896"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="n_projects <= 2.5\nsquared_error = 0.023\nsamples = 6408\nvalue = 0.976"] ;
+8 -> 9 ;
+10 [label="squared_error = 0.153\nsamples = 428\nvalue = 0.811"] ;
+9 -> 10 ;
+11 [label="squared_error = 0.012\nsamples = 5980\nvalue = 0.988"] ;
+9 -> 11 ;
+12 [label="avg_monthly_hrs <= 216.5\nsquared_error = 0.248\nsamples = 1445\nvalue = 0.541"] ;
+8 -> 12 ;
+13 [label="squared_error = 0.043\nsamples = 513\nvalue = 0.955"] ;
+12 -> 13 ;
+14 [label="squared_error = 0.215\nsamples = 932\nvalue = 0.313"] ;
+12 -> 14 ;
+}
